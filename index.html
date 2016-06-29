@@ -3,7 +3,7 @@
   <head>
     <title> Ten Tracks </title>
     <script type="text/javascript" src="src/tenTrack.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles/core.css">
+    <link rel="stylesheet" type="text/css" href="styling/core.css">
   </head>
 
   <body>
@@ -11,10 +11,18 @@
       <div class="title">Ten Tracks </div>
     </div>
 
-    <ul>
-      <div id="tracks"> </div>
-      <script> document.getElementById("tracks").innerHTML = display(samplePlaylist); </script>
-    </ul>
+    <div id="mainsection">
+      <div class="wrapcontentbox">
+        <div class="contentbox">
+          <ul>
+            <div class="content">
+              <div id="tracks"> </div>
+              <script> document.getElementById("tracks").innerHTML = display(samplePlaylist); </script>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 
 
