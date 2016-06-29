@@ -7,21 +7,31 @@
   </head>
 
   <body>
-    <div id="header">
-      <div class="title">Ten Tracks </div>
+    <div class="wraptitlebox">
+      <div class="titlebox">
+        <div id="title">Ten Tracks </div>
+      </div>
     </div>
 
+
     <div id="mainsection">
-      <div class="wrapcontentbox">
-        <div class="contentbox">
-          <ul>
-            <div class="content">
-              <div id="tracks"> </div>
-              <script> document.getElementById("tracks").innerHTML = display(samplePlaylist); </script>
-            </div>
-          </ul>
+
+      <!-- <div id='leftside'> LEFT
+      </div> -->
+
+      <div id="rightside">
+        <div class="wrapcontentbox">
+          <div class="contentbox">
+            <ul>
+              <div class="content">
+                <div id="tracks"> </div>
+                <script> document.getElementById("tracks").innerHTML = display(samplePlaylist); </script>
+              </div>
+            </ul>
+          </div>
         </div>
       </div>
+
     </div>
   </body>
 
