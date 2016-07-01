@@ -3,6 +3,8 @@
   <head>
     <title> Ten Tracks </title>
     <script type="text/javascript" src="src/tenTrack.js"></script>
+    <script type="text/javascript" src="src/playlists.js"></script>
+
     <link rel="stylesheet" type="text/css" href="styling/core.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="src/jqfunctionality.js"></script>
@@ -35,7 +37,7 @@
             <ul>
               <div class="content">
                 <div id="tracks"> </div>
-                <script> document.getElementById("tracks").innerHTML = display(samplePlaylist); </script>
+                <script> document.getElementById("tracks").innerHTML = display(samplePlaylist, playlistPics); </script>
               </div>
             </ul>
           </div>
