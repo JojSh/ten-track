@@ -1,18 +1,15 @@
 $(document).ready(function() {
 
+  $('#disappearingthing').hide();
 
 
-  // $('#hoveringthing').onclick(
-  //   function() {
-  //     $('#disappearingthing').show();
-  //   },
-  //   function() {
-  //     $('#disappearingthing').hide();
-  //   }
-  // );
 
+  $('#tracks').hover(function() {
+      $('#disappearingthing').show();
+    },
+    function() {
+      $('#disappearingthing').hide();
+    }
+  );
 
-  $("#hoveringthing").click(function() {
-    alert("You clicked the buttross");
-  });
 });
