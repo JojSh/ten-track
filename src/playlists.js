@@ -11,7 +11,7 @@ var samplePlaylist = ["Trevino - L.A. View",
                       ];
 
 var playlistPics = ["https://i1.sndcdn.com/artworks-000162517285-kcp88z-t500x500.jpg",
-                      "Gold Panda - Time Eater",
+                      "https://i1.sndcdn.com/artworks-000148194161-zh77v7-t500x500.jpg",
                        "NT89 - Red Rupture",
                        "Recondite - Andever",
                        "Four Tet - Reservoir",
