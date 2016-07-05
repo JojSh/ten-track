@@ -2,9 +2,6 @@ $(document).ready(function() {
 
   var clicked = false;
 
-  // hideIfNotClicked('#disappearingthing');
-
-
   $('#tracks p').hover(function() {
     setImgSrc(this, '#disappearingthing');
     },
@@ -19,20 +16,17 @@ $(document).ready(function() {
     }
   }
 
-
-  $('#tracks p').click(function(){
+  $('#tracks p').on('click', function(){
     clicked = true;
     highlightTrack(this);
-    console.log('Clicking element');
     setImgSrc(this, '#pics');
 
   });
 
   function highlightTrack(element) {
-    $(element).css({
-      "color": "#69b3bc",
-      "text-decoration": "underline"
-    });
+    $(".highlightTrack").removeClass("highlightTrack");
+    $(element).addClass("highlightTrack");
+
   }
 
   function setImgSrc(element, divID) {

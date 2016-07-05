@@ -1,11 +1,13 @@
+#mainsection {
+  min-width: 1200px;
+}
+
 #leftside {
-  min-width: 550px;
   float: left;
   width: 50%;
 }
 
 #rightside {
-  min-width: 550px;
   float: right;
   width: 50%;
 }
@@ -48,16 +50,17 @@
 }
 
 .wraptitlebox {
-  /*float: right;*/
   background: rgba(190, 190, 190, 0.3);
-  /*margin: 0px 150px 0 0;*/
-  /*height: 220px;*/
+
   width: 98.5%;
   padding: 7px;
   border-radius: 2px;
-  /*background: #f8f8f8*/
 }
 
+.highlightTrack {
+  color: #69b3bc;
+  text-decoration: underline;
+}
 
 .titlebox {
 
@@ -74,14 +77,11 @@
 
 body {
   background-image:url("images/blk-grn-retro.jpg");
-
-  /* background: -webkit-linear-gradient(right, #4a1c1c , #f3d7a0); /* For Safari 5.1 to 6.0 */
   font-family: Verdana;
 }
 
 #header {
   background: rgba(190, 190, 190, 0.7);
-  /*background: -webkit-linear-gradient(right, #4a1c1c , #fce1aa);*/
   padding: 5px;
   position: relative;
   height: 30px;
