@@ -1,9 +1,11 @@
 #leftside {
+  min-width: 550px;
   float: left;
   width: 50%;
 }
 
 #rightside {
+  min-width: 550px;
   float: right;
   width: 50%;
 }
@@ -12,24 +14,18 @@
   float: left;
   background: rgba(190, 190, 190, 0.3);
   margin: 10% 5% 10% 20%;
-  /*height: 220px;*/
-  /*width: 500px;*/
   padding: 10px;
   border-radius: 2px;
   /*background: #f8f8f8*/
-  /*background-image:url("images/tiles/background.png");*/
 }
 
 .wraprightcontentbox {
   float: right;
   background: rgba(190, 190, 190, 0.3);
   margin: 10% 20% 10% 5%;
-  /*height: 220px;*/
-  /*width: 500px;*/
   padding: 10px;
   border-radius: 2px;
   /*background: #f8f8f8*/
-  /*background-image:url("images/tiles/background.png");*/
 }
 
 .leftcontentbox {
@@ -43,8 +39,6 @@
 
 .rightcontentbox {
   background-image:url("images/tiles/white_wall_hash.png");
-  /*height: inherit;*/
-  /*width: inherit;*/
   padding: 10px;
   border-radius: 2px;
 }
@@ -62,7 +56,6 @@
   padding: 7px;
   border-radius: 2px;
   /*background: #f8f8f8*/
-  /*background-image:url("images/tiles/background.png");*/
 }
 
 
@@ -97,4 +90,13 @@ body {
 #title {
   text-align: center;
   padding-top: 5px;
+}
+
+
+#disappearingthing {
+  position: absolute;
+}
+
+#pics {
+  position: absolute;
 }
