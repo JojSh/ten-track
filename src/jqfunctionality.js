@@ -30,18 +30,19 @@ $(document).ready(function() {
 
   }
 
-  function setImgSrc(element, tag) {
-    var img = $(tag);
+  function _setElementSrc(element, tag, array) {
+    var item = $(tag);
     var index = $(element).attr('data-number');
-    img.attr('src', playlistPics[index]);
-    img.show();
+    item.attr('src', array[index]);
+    item.show();
+  }
+
+  function setImgSrc(element, tag) {
+    _setElementSrc(element, tag, playlistPics);
   }
 
   function setAudioSrc(element, tag) {
-    var player = $(tag);
-    var index = $(element).attr('data-number');
-    player.attr('src', trackPlayers[index]);
-    player.show();
+    _setElementSrc(element, tag, trackPlayers);
   }
 
 });
