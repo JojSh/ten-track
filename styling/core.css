@@ -38,6 +38,14 @@
   border-radius: 2px;
 }
 
+.musicplayerbox {
+  background-image:url("images/tiles/white_wall_hash.png");
+  height: 110px;
+  width: 500px;
+  padding: 10px;
+  border-radius: 2px;
+}
+
 
 .rightcontentbox {
   background-image:url("images/tiles/white_wall_hash.png");
