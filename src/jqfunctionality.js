@@ -20,7 +20,7 @@ $(document).ready(function() {
     clicked = true;
     highlightTrack(this);
     setImgSrc(this, '#pics');
-    setAudioSrc('iframe');
+    setAudioSrc(this, 'iframe');
 
   });
 
@@ -37,9 +37,10 @@ $(document).ready(function() {
     img.show();
   }
 
-  function setAudioSrc(tag) {
+  function setAudioSrc(element, tag) {
     var player = $(tag);
-    player.attr('src', "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/272292332&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
+    var index = $(element).attr('data-number');
+    player.attr('src', trackPlayers[index]);
     player.show();
   }
 
