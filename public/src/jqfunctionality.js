@@ -30,21 +30,10 @@ $(document).ready(function() {
 
   }
 
-  // function _setElementSrc(element, tag, array) {
-  //   var item = $(tag);
-  //   var index = $(element).attr('data-number');
-  //   console.log(item)
-  //   item.attr('src', array[index]);
-  //   item.show();
-  // }
-
 function _setElementSrc(element, tag, attribute) {
   var item = $(tag);
   var index = $(element).attr('data-number');
   item.attr('src', playlistObjects[index][attribute]);
-
-
-  // console.log(item);
   item.show();
 }
 
@@ -57,15 +46,6 @@ function _setElementSrc(element, tag, attribute) {
   }
 
 });
-
-// function display(ary) {
-//   var element = "";
-//   ary.forEach(function(track, index) {
-//     var components = ("<p data-number="+index+">" + recordPic() +" "+ track + "</p>");
-//     element += components;
-//   });
-//   return element;
-// }
 
 function displayTrackList(objects) {
   var element = "";
