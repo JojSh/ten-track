@@ -10,9 +10,9 @@ $(document).ready(function() {
     }
   );
 
-  function hideIfNotClicked(pic) {
+  function hideIfNotClicked(element) {
     if (clicked === false) {
-      $(pic).hide();
+      $(element).hide();
     }
   }
 
@@ -30,31 +30,52 @@ $(document).ready(function() {
 
   }
 
-  function _setElementSrc(element, tag, array) {
-    var item = $(tag);
-    var index = $(element).attr('data-number');
-    item.attr('src', array[index]);
-    item.show();
-  }
+  // function _setElementSrc(element, tag, array) {
+  //   var item = $(tag);
+  //   var index = $(element).attr('data-number');
+  //   console.log(item)
+  //   item.attr('src', array[index]);
+  //   item.show();
+  // }
+
+function _setElementSrc(element, tag, attribute) {
+  var item = $(tag);
+  var index = $(element).attr('data-number');
+  item.attr('src', playlistObjects[index][attribute]);
+
+
+  // console.log(item);
+  item.show();
+}
 
   function setImgSrc(element, tag) {
-    _setElementSrc(element, tag, playlistPics);
+    _setElementSrc(element, tag, 'imgURL');
   }
 
   function setAudioSrc(element, tag) {
-    _setElementSrc(element, tag, trackPlayers);
+    _setElementSrc(element, tag, 'playerURL');
   }
 
 });
 
-function display(ary) {
+// function display(ary) {
+//   var element = "";
+//   ary.forEach(function(track, index) {
+//     var components = ("<p data-number="+index+">" + recordPic() +" "+ track + "</p>");
+//     element += components;
+//   });
+//   return element;
+// }
+
+function displayTrackList(objects) {
   var element = "";
-  ary.forEach(function(track, index) {
-    var components = ("<p data-number="+index+">" + recordPic() +" "+ track + "</p>");
+  objects.forEach(function(obj, index) {
+    var components = ("<p data-number="+index+">" + recordPic() +" "+ obj.title + "</p>");
     element += components;
   });
   return element;
 }
+
 
 function recordPic() {
   return "<img src='styling/images/record_icon_small.png' ></img>";
