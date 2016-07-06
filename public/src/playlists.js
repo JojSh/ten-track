@@ -14,7 +14,7 @@ var playlistPics = ["https://i1.sndcdn.com/artworks-000162517285-kcp88z-t500x500
                       "https://i1.sndcdn.com/artworks-000148194161-zh77v7-t500x500.jpg",
                        "https://i1.sndcdn.com/artworks-000161737209-cjkz58-t500x500.jpg",
                        "https://i1.sndcdn.com/artworks-000166507496-rw6tha-t500x500.jpg",
-                       "images/four_tet_reservoirs.png",
+                       "styling/images/four_tet_reservoirs.png",
                        "https://i1.sndcdn.com/artworks-000165227595-oe3jzz-t500x500.jpg",
                        "https://i1.sndcdn.com/artworks-000165212860-214e2n-t500x500.jpg",
                        "https://i1.sndcdn.com/artworks-000146463684-hrtcgx-t500x500.jpg",
