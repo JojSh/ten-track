@@ -85,7 +85,9 @@
 
 body {
   background-image:url("images/blk-grn-retro.jpg");
-  font-family: Verdana;
+  font-weight: bold;
+  font-family:  Helvetica, Arial, Verdana, sans-serif;
+  color: #444;
 }
 
 #header {
