@@ -57,5 +57,5 @@ function display(ary) {
 }
 
 function recordPic() {
-  return "<img src='../public/styling/images/record_icon_small.png' ></img>";
+  return "<img src='images/record_icon_small.png' ></img>";
 }
