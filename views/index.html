@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Ten Tracks </title>
+    <script type="text/javascript" src="../public/src/tenTrack.js"></script>
+    <script type="text/javascript" src="../public/src/playlists.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../public/styling/core.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../public/src/jqfunctionality.js"></script>
+
+  </head>
+
+  <body>
+    <div class="wraptitlebox">
+      <div class="titlebox">
+        <div id="title">Ten Tracks </div>
+      </div>
+    </div>
+
+
+    <div id="mainsection">
+
+      <div id='leftside'>
+        <div class="wrapleftcontentbox">
+          <div class="leftcontentbox">
+            <img id="disappearingthing"></img>
+
+            <img id="pics"> </img>
+          </div>
+          <p> </p>
+          <div class="musicplayerbox">
+            <iframe width="100%" height="100" scrolling="no" frameborder="no" ></iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="rightside">
+        <div class="wraprightcontentbox">
+          <div class="rightcontentbox">
+            <ul>
+              <div class="content">
+                <div id="tracks"> </div>
+                <script> document.getElementById("tracks").innerHTML = display(samplePlaylist); </script>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+
+
+</html>
